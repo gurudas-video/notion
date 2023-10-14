@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Animation (Like Gumroad!)</title>
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            background: #000;
+            color: #fff;
+            border: 1px solid #000;
+            border-radius: 4px;
+            padding: .8em 2em;
+            transition: 0.5s; /* Adjusted animation speed to 0.5 seconds */
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: #000;
+            transform: translate(-0.25rem, -0.25rem);
+            background: #FF90e8;
+            box-shadow: 0.25rem 0.25rem #000;
+        }
+
+        /* when mouse button is pressed */
+        button:active {
+            transform: translate(0);
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <button>Get Started</button>
+</body>
+</html>
