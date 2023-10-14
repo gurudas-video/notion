@@ -4,40 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Button Animation (Like Gumroad!)</title>
+    <title>Styled Button with Inter Font</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <style>
         body {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            font-family: 'Inter', sans-serif; /* Set the font-family for the entire page */
         }
 
-        button {
+        .button-link {
+            display: inline-block;
             background: #000;
             color: #fff;
             border: 1px solid #000;
             border-radius: 4px;
             padding: .8em 2em;
-            transition: 0.5s; /* Adjusted animation speed to 0.5 seconds */
+            text-decoration: none;
+            transition: 0.5s;
             cursor: pointer;
         }
 
-        button:hover {
+        .button-link:hover {
             color: #000;
             transform: translate(-0.25rem, -0.25rem);
             background: #FF90e8;
             box-shadow: 0.25rem 0.25rem #000;
         }
 
-        /* when mouse button is pressed */
-        button:active {
+        .button-link:active {
             transform: translate(0);
             box-shadow: none;
         }
     </style>
 </head>
 <body>
-    <button>Get Started</button>
+    <a href="https://www.notion.so/gurudasedits/83e1e8a3d3184808bf70a5fdd32a9f07?v=b6b3f75cb1c54be8a8ec2fda4c9920a9&pvs=4" class="button-link">Thumbnails</a>
 </body>
 </html>
